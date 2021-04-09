@@ -6,10 +6,10 @@ import os
 import torch
 from os.path import join
 import zipfile
-from utils import extract, standardize
-from datasets import SeismicDataset2D
+from core.utils import extract, standardize
+from core.datasets import SeismicDataset2D
 from torch.utils.data import DataLoader
-from model2D import Model2D
+from core.model2D import Model2D
 from sklearn.metrics import r2_score
 import errno
 import argparse

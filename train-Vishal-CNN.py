@@ -5,10 +5,10 @@ import matplotlib.pyplot as plt
 import os
 import torch
 from os.path import join
-from utils import extract, standardize
-from datasets import SeismicDataset1D
+from core.utils import extract, standardize
+from core.datasets import SeismicDataset1D
 from torch.utils.data import DataLoader
-from model1D import VishalNet
+from core.model1D import VishalNet
 from sklearn.metrics import r2_score
 import errno
 import argparse
